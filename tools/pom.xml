@@ -20,18 +20,17 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <parent>
     <groupId>com.google</groupId>
-    <artifactId>bitcoinj-parent</artifactId>
-    <version>0.12-SNAPSHOT</version>
+    <artifactId>worldcoinj-parent</artifactId>
+    <version>0.11-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
-  <artifactId>bitcoinj-tools</artifactId>
+  <artifactId>worldcoinj-tools</artifactId>
 
-  <name>bitcoinj Tools</name>
-  <description>A collection of useful tools that use the bitcoinj library to perform wallet operations</description>
+  <name>worldcoinj Tools</name>
+  <description>A collection of useful tools that use the worldcoinj library to perform wallet operations</description>
 
   <build>
-
       <plugins>
           <plugin>
               <groupId>org.apache.maven.plugins</groupId>
@@ -53,7 +52,7 @@
                   </filters>
                   <transformers>
                       <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                          <mainClass>com.google.bitcoin.tools.WalletTool</mainClass>
+                          <mainClass>com.google.worldcoin.tools.WalletTool</mainClass>
                       </transformer>
                   </transformers>
               </configuration>
@@ -72,7 +71,7 @@
   <dependencies>
     <dependency>
       <groupId>com.google</groupId>
-      <artifactId>bitcoinj</artifactId>
+      <artifactId>worldcoinj</artifactId>
       <version>${project.parent.version}</version>
     </dependency>
     <dependency>
@@ -83,7 +82,7 @@
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-jdk14</artifactId>
-      <version>1.7.6</version>
+      <version>1.6.4</version>
     </dependency>
     <dependency>
       <groupId>com.h2database</groupId>
