@@ -19,27 +19,27 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <groupId>com.google</groupId>
+        <groupId>org.bitcoinj</groupId>
         <artifactId>worldcoinj-parent</artifactId>
-        <version>0.11-SNAPSHOT</version>
+        <version>0.13.3</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>worldcoinj-examples</artifactId>
+    <artifactId>bitcoinj-examples</artifactId>
 
-    <name>worldcoinj Examples</name>
-    <description>A collection of examples using the worldcoinj library</description>
+    <name>bitcoinj Examples</name>
+    <description>A collection of examples using the bitcoinj library</description>
 
     <dependencies>
         <dependency>
-            <groupId>com.google</groupId>
-            <artifactId>worldcoinj</artifactId>
+            <groupId>org.bitcoinj</groupId>
+            <artifactId>bitcoinj-core</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-jdk14</artifactId>
-            <version>1.6.4</version>
+            <version>1.7.7</version>
         </dependency>
         <dependency>
             <groupId>com.h2database</groupId>
